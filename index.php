@@ -1,9 +1,5 @@
 <?php
+require './bootstrap.php';
 
-// connection
-require 'functions.php';
-$pdo=dbConnection();
-
-//fetch tasks
-$tasks=fetchTasks($pdo);
+$tasks=$query->sellectAll("tasks");
 require 'index.view.php';
