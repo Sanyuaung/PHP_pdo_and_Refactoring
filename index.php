@@ -1,6 +1,3 @@
 <?php
-require './bootstrap.php';
-
-$tasks=$query->sellectAll("users");
-// dd($tasks);
-require 'index.view.php';
+require 'core/bootstrap.php';
+require Router::load("routes.php")->direct(Request::uri());

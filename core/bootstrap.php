@@ -1,8 +1,11 @@
 <?php
-require 'functions.php';
-require 'database/connection.php';
-require 'database/query.php';
+require 'core/functions.php';
+require 'core/database/connection.php';
+require 'core/database/query.php';
+require 'core/routers.php';
+require 'core/request.php';
 $config=require 'config.php';
+
 // dd($config);
 // $dbname=new Connection();
 // $query=new QueryBuilder(
