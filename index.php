@@ -1,5 +1,6 @@
 <?php
 require './bootstrap.php';
 
-$tasks=$query->sellectAll("tasks");
+$tasks=$query->sellectAll("users");
+// dd($tasks);
 require 'index.view.php';
